@@ -1,0 +1,100 @@
+<!-- DOCTYPE HTML -->
+<html lang="pt-BR">
+
+<!-- Cabeçalho -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A calculadora mais fácil">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/calc.css">
+    <title>Calculadora</title>
+  </head>
+
+  <!-- Corpo do Programa -->
+  <body>
+  <!-- Topo da Página -->
+    <header class="topo1">
+      <img src="img/calc.png" alt="logo do site" width="100" height="90">
+      <nav>
+        <a class="topo2">My 1st JavaScript Program</a>
+      </nav>
+    </header>
+
+    <!-- Estrutura da calculadora -->
+    <center>
+    <div class="part">
+      <div class="container">
+        <form class="forms">
+          <!-- Entradas dos valores que serão operados -->
+          <h3>Entrada de Dados:</h3>
+          <input type="text" id="num1"> N1 <br/><br/>  <!-- Entrada para o Número 1 -->
+          <input type="text" id="num2"> N2 <br/><br/>  <!-- Entrada para o Número 2 -->
+          <!-- Botões para as ações (funções) JS --> 
+          <button type="button" class="btn btn-light" onclick="Soma()">Mais</button>  
+          <button type="button" class="btn btn-light" onclick="Subt()">Menos</button>  
+          <button type="button" class="btn btn-light" onclick="Mult()">Vezes</button>  
+          <button type="button" class="btn btn-light" onclick="Divi()">Divide</button>  
+          <br/><br/>
+          <!-- Saída para o resultado da operação entre n1 e n2 -->
+          <h3>Resultado:</h3>
+          <input type="text" id="saida">   <!-- Saída para o resultado da soma: n1 + n2 -->
+          <input type="reset" value="Limpar" class="btn btn-info">   
+        </form>
+      </div>
+    </div>
+    </center>
+
+    <!-- Função que realiza a soma -->
+    <script>
+      function Soma(){
+		let n1 = document.getElementById("num1").value; 
+        let n2 = document.getElementById("num2").value; 
+ 	    let res = Number(n1) + Number(n2);
+        document.getElementById("saida").value = res;}
+    </script>
+
+    <!-- Subtração -->
+    <script>
+      function Subt(){
+		let n1 = document.getElementById("num1").value; 
+        let n2 = document.getElementById("num2").value; 
+ 	    let res = Number(n1) - Number(n2);
+        document.getElementById("saida").value = res;}
+    </script>
+
+    <!-- Multiplicação -->
+    <script>
+      function Mult(){
+		let n1 = document.getElementById("num1").value; 
+        let n2 = document.getElementById("num2").value; 
+ 	    let res = Number(n1) * Number(n2);
+        document.getElementById("saida").value = res;}
+    </script>
+
+    <!-- Divisão -->
+    <script>
+      function Divi(){
+		let n1 = document.getElementById("num1").value; 
+        let n2 = document.getElementById("num2").value; 
+ 	    let res = Number(n1) / Number(n2);
+        document.getElementById("saida").value = res;}
+    </script>
+
+  </body>
+
+  <!--  Campo inferior da Página -->
+  <footer class="bottom">
+    <img src="img/github.svg" width="48x48" alt="github_logo">
+    <a class="a" href="https://github.com/AmandaNPavanelli">GitHub</a>
+    <div class="b">
+      <img src="img/unis.svg" width="68x68" alt="unis_logo"> 
+      <a class="b" href="https://noticias.unis.edu.br/">Unis</a>
+    </div>
+    <div class="c">
+      <a href="https://mail.google.com">Contato: an.pavanelli@gmail.com</a>
+    </div>  
+  </footer>
+
+</html>
+<!-- Mandy End -->
